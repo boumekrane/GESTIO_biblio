@@ -1,1 +1,58 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyMwK8FoxOt0EJftBGZecZQU"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","execution_count":4,"metadata":{"colab":{"base_uri":"https://localhost:8080/","height":356},"id":"wWyqr-Zf8zjX","executionInfo":{"status":"error","timestamp":1748354666894,"user_tz":-120,"elapsed":1097,"user":{"displayName":"Samira Achki","userId":"15587794027363929317"}},"outputId":"9bde856f-7ed5-4a70-9168-026d3e0a7823"},"outputs":[{"output_type":"error","ename":"ValueError","evalue":"Mountpoint must be in a directory that exists","traceback":["\u001b[0;31m---------------------------------------------------------------------------\u001b[0m","\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)","\u001b[0;32m<ipython-input-4-fa2356122537>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mgoogle\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcolab\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mdrive\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mdrive\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmount\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'/content/drive/MyDrive/Gestion_Bib'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mlivre\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mLivre\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mutilisateur\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mUtilisateur\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mbibliotheque\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mBibliotheque\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n","\u001b[0;32m/usr/local/lib/python3.11/dist-packages/google/colab/drive.py\u001b[0m in \u001b[0;36mmount\u001b[0;34m(mountpoint, force_remount, timeout_ms, readonly)\u001b[0m\n\u001b[1;32m     98\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mmount\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmountpoint\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mforce_remount\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mFalse\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtimeout_ms\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m120000\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mreadonly\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mFalse\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     99\u001b[0m   \u001b[0;34m\"\"\"Mount your Google Drive at the specified mountpoint path.\"\"\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 100\u001b[0;31m   return _mount(\n\u001b[0m\u001b[1;32m    101\u001b[0m       \u001b[0mmountpoint\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    102\u001b[0m       \u001b[0mforce_remount\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mforce_remount\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n","\u001b[0;32m/usr/local/lib/python3.11/dist-packages/google/colab/drive.py\u001b[0m in \u001b[0;36m_mount\u001b[0;34m(mountpoint, force_remount, timeout_ms, ephemeral, readonly)\u001b[0m\n\u001b[1;32m    202\u001b[0m     \u001b[0mnormed\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_os\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mnormpath\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmountpoint\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    203\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0;34m'/'\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mnormed\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0m_os\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mexists\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_os\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdirname\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mnormed\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 204\u001b[0;31m       \u001b[0;32mraise\u001b[0m \u001b[0mValueError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Mountpoint must be in a directory that exists'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    205\u001b[0m   \u001b[0;32mexcept\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    206\u001b[0m     \u001b[0md\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mkill\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_signal\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mSIGKILL\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n","\u001b[0;31mValueError\u001b[0m: Mountpoint must be in a directory that exists"]}],"source":["from livre import Livre\n","from utilisateur import Utilisateur\n","from bibliotheque import Bibliotheque\n","\n","def menu():\n","    biblio = Bibliotheque()\n","\n","    # Données de test\n","    livre1 = Livre(\"Python pour les débutants\", \"Jean Dupont\")\n","    livre2 = Livre(\"Intelligence Artificielle\", \"Marie Curie\")\n","    biblio.ajouter_livre(livre1)\n","    biblio.ajouter_livre(livre2)\n","\n","    utilisateur1 = Utilisateur(\"Ali\", 1)\n","    utilisateur2 = Utilisateur(\"Sana\", 2)\n","    biblio.ajouter_utilisateur(utilisateur1)\n","    biblio.ajouter_utilisateur(utilisateur2)\n","\n","    while True:\n","        print(\"\\n=== Menu ===\")\n","        print(\"1. Afficher les livres\")\n","        print(\"2. Afficher les utilisateurs\")\n","        print(\"3. Emprunter un livre\")\n","        print(\"4. Retourner un livre\")\n","        print(\"5. Quitter\")\n","\n","        choix = input(\"Entrez votre choix : \")\n","\n","        if choix == \"1\":\n","            biblio.afficher_livres()\n","        elif choix == \"2\":\n","            biblio.afficher_utilisateurs()\n","        elif choix == \"3\":\n","            nom = input(\"Nom de l'utilisateur : \")\n","            titre = input(\"Titre du livre : \")\n","            utilisateur = next((u for u in biblio.utilisateurs if u.nom == nom), None)\n","            livre = next((l for l in biblio.livres if l.titre == titre), None)\n","            if utilisateur and livre:\n","                utilisateur.emprunter_livre(livre)\n","            else:\n","                print(\"Utilisateur ou livre introuvable.\")\n","        elif choix == \"4\":\n","            nom = input(\"Nom de l'utilisateur : \")\n","            titre = input(\"Titre du livre : \")\n","            utilisateur = next((u for u in biblio.utilisateurs if u.nom == nom), None)\n","            livre = next((l for l in biblio.livres if l.titre == titre), None)\n","            if utilisateur and livre:\n","                utilisateur.retourner_livre(livre)\n","            else:\n","                print(\"Utilisateur ou livre introuvable.\")\n","        elif choix == \"5\":\n","            print(\"Au revoir !\")\n","            break\n","        else:\n","            print(\"Choix invalide.\")\n","\n","if __name__ == \"__main__\":\n","    menu()\n"]}]}
+from livre import Livre
+from utilisateur import Utilisateur
+from bibliotheque import Bibliotheque
+
+def menu():
+    biblio = Bibliotheque()
+
+    # Données de test
+    livre1 = Livre("Python pour les débutants", "Jean Dupont")
+    livre2 = Livre("Intelligence Artificielle", "Marie Curie")
+    biblio.ajouter_livre(livre1)
+    biblio.ajouter_livre(livre2)
+
+    utilisateur1 = Utilisateur("Ali", 1)
+    utilisateur2 = Utilisateur("Sana", 2)
+    biblio.ajouter_utilisateur(utilisateur1)
+    biblio.ajouter_utilisateur(utilisateur2)
+
+    while True:
+        print("\n=== Menu ===")
+        print("1. Afficher les livres")
+        print("2. Afficher les utilisateurs")
+        print("3. Emprunter un livre")
+        print("4. Retourner un livre")
+        print("5. Quitter")
+
+        choix = input("Entrez votre choix : ")
+
+        if choix == "1":
+            biblio.afficher_livres()
+        elif choix == "2":
+            biblio.afficher_utilisateurs()
+        elif choix == "3":
+            nom = input("Nom de l'utilisateur : ")
+            titre = input("Titre du livre : ")
+            utilisateur = next((u for u in biblio.utilisateurs if u.nom == nom), None)
+            livre = next((l for l in biblio.livres if l.titre == titre), None)
+            if utilisateur and livre:
+                utilisateur.emprunter_livre(livre)
+            else:
+                print("Utilisateur ou livre introuvable.")
+        elif choix == "4":
+            nom = input("Nom de l'utilisateur : ")
+            titre = input("Titre du livre : ")
+            utilisateur = next((u for u in biblio.utilisateurs if u.nom == nom), None)
+            livre = next((l for l in biblio.livres if l.titre == titre), None)
+            if utilisateur and livre:
+                utilisateur.retourner_livre(livre)
+            else:
+                print("Utilisateur ou livre introuvable.")
+        elif choix == "5":
+            print("Au revoir !")
+            break
+        else:
+            print("Choix invalide.")
+
+if __name__ == "__main__":
+    menu()
