@@ -1,1 +1,9 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyPTO6I6gfnIJvE6IO/pJ67A"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","execution_count":1,"metadata":{"id":"nX_eF5qX7dPu","executionInfo":{"status":"ok","timestamp":1748352581627,"user_tz":-120,"elapsed":25,"user":{"displayName":"Samira Achki","userId":"15587794027363929317"}}},"outputs":[],"source":["class Livre:\n","    def __init__(self, titre, auteur):\n","        self.titre = titre\n","        self.auteur = auteur\n","        self.disponible = True\n","\n","    def __str__(self):\n","        statut = \"Disponible\" if self.disponible else \"Emprunté\"\n","        return f\"{self.titre} par {self.auteur} - {statut}\""]}]}
+class Livre:
+    def __init__(self, titre, auteur):
+        self.titre = titre
+        self.auteur = auteur
+        self.disponible = True
+
+    def __str__(self):
+        statut = "Disponible" if self.disponible else "Emprunté"
+        return f"{self.titre} par {self.auteur} - {statut}"
