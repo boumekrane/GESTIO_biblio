@@ -1,1 +1,21 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyOhvtKI8idKTrVaXGzzi9sE"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","execution_count":1,"metadata":{"id":"h7Feseet78hV","executionInfo":{"status":"ok","timestamp":1748352632371,"user_tz":-120,"elapsed":21,"user":{"displayName":"Samira Achki","userId":"15587794027363929317"}}},"outputs":[],"source":["class Utilisateur:\n","    def __init__(self, nom, identifiant):\n","        self.nom = nom\n","        self.identifiant = identifiant\n","        self.livres_empruntes = []\n","\n","    def emprunter_livre(self, livre):\n","        if livre.disponible:\n","            livre.disponible = False\n","            self.livres_empruntes.append(livre)\n","            print(f\"{self.nom} a emprunté le livre : {livre.titre}\")\n","        else:\n","            print(f\"Le livre '{livre.titre}' n'est pas disponible.\")\n","\n","    def retourner_livre(self, livre):\n","        if livre in self.livres_empruntes:\n","            livre.disponible = True\n","            self.livres_empruntes.remove(livre)\n","            print(f\"{self.nom} a retourné le livre : {livre.titre}\")\n","        else:\n","            print(f\"{self.nom} n'a pas emprunté le livre : {livre.titre}\")"]}]}
+class Utilisateur:
+    def __init__(self, nom, identifiant):
+        self.nom = nom
+        self.identifiant = identifiant
+        self.livres_empruntes = []
+
+    def emprunter_livre(self, livre):
+        if livre.disponible:
+            livre.disponible = False
+            self.livres_empruntes.append(livre)
+            print(f"{self.nom} a emprunté le livre : {livre.titre}")
+        else:
+            print(f"Le livre '{livre.titre}' n'est pas disponible.")
+
+    def retourner_livre(self, livre):
+        if livre in self.livres_empruntes:
+            livre.disponible = True
+            self.livres_empruntes.remove(livre)
+            print(f"{self.nom} a retourné le livre : {livre.titre}")
+        else:
+            print(f"{self.nom} n'a pas emprunté le livre : {livre.titre}")
